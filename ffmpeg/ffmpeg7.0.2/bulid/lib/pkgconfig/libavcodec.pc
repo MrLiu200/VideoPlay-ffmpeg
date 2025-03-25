@@ -1,0 +1,14 @@
+prefix=/c/software/msys2/ffmpeg/output/
+exec_prefix=${prefix}
+libdir=/c/software/msys2/ffmpeg/output//lib
+includedir=/c/software/msys2/ffmpeg/output//include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 61.3.100
+Requires: libswresample >= 5.1.100, libavutil >= 59.8.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -liconv -lm -latomic -llzma -lmfuuid -lole32 -lstrmiids -lole32 -luser32 -lz
+Libs.private: 
+Cflags: -I${includedir}

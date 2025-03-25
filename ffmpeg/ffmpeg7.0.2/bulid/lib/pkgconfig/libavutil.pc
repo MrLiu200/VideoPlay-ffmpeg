@@ -1,0 +1,14 @@
+prefix=/c/software/msys2/ffmpeg/output/
+exec_prefix=${prefix}
+libdir=/c/software/msys2/ffmpeg/output//lib
+includedir=/c/software/msys2/ffmpeg/output//include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 59.8.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm -luser32 -lbcrypt -latomic
+Libs.private: 
+Cflags: -I${includedir}
